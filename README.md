@@ -1,3 +1,7 @@
+# TPMS logging for AIM loggers
+
+![MXM logger](PXL_20241212_231017137.jpg)
+
 # Motivation
 
 I was having a tough time dialing tire pressures with warmers, measuring before/after pressures and temperatures to determine how I was riding on the track. The instantaneous measurements are useful but only that, and they are tedious to complete so I got thinking. Since I had already added TPS and brake pressure logging to the AIM dash (MXM) on the Kramer Evo2R, and it technically supports some 60 odd extra channels over the ECU CANBUS, I figured I could use it to log tire pressure data. I am also training (physically) to ride better, and harder so heart rate data would also be useful to determine what training would work best.
@@ -50,6 +54,7 @@ My contribution here would mostly be around bringing the various separate bits t
 **(assumes android phone)** Install nRF Connect app. Start it scanning and place the TPMS sensor on the tire valve. The sensors only transmit when they detect a change in pressure so it only works for a short while before you will need to do this again.
 
 You are looking for a new device showing up that you can't connect to but looks like so
+![nRFConnect TPMS sensor](SCR-20250601-oeec.png)
 
 Note the ID of that device. Repeat with the other sensor. Both IDs are needed
 
@@ -61,7 +66,11 @@ The MXM wiring harness on the Evo2R does not expose all the pins so the connecto
 
 Set the values in the HRM_basic.ino file to match the IDs you found. Ref Line 15-18. Upload the code to the ESP32 and run it.
 
-The AIM dash will need to be configured to read the ECU channels. Once configured, it should display 0.0 for the channels till the HRM or TPMS sensors are connected.
+The AIM dash will need to be configured to read the ECU channels. 
+
+![AIM studio configuration](SCR-20250601-ofnz.png)
+
+Once configured, it should display 0.0 for the channels till the HRM or TPMS sensors are connected.
 
 # Support
 
