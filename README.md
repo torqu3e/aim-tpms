@@ -42,7 +42,7 @@ My contribution here would mostly be around bringing the various separate bits t
 
 
 # Hardware
-- [TPMS sensor](https://www.aliexpress.com/item/1005007507568688.html) titled:"Motorcycle Bluetooth-Compatible Tire Pressure Monitoring System TPMS Tire Pressure Sensors External Sensor Android/IOS Car TMPS" in case that link calls it quits
+- [TPMS sensor](https://www.aliexpress.com/item/1005007703379700.html) Look for "motorcycle bluetooth tpms" in case the link stops working. Just need the wheel sensors.
 - [Coospo H6M heart rate monitor chest strap](https://www.aliexpress.com/item/1005005059886054.html)
 - [TJA1050 CANBUS transceiver](https://www.aliexpress.com/item/1005006832397047.html)
 - [Autosport Size 22 pins](https://www.prowireusa.com/p-1552-size-22-contact-skt-deutsch-autosort.html)
